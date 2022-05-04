@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:WpfApp4"
+mc:Ignorable="d"
+xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+Title="Приложение для пользователей" Height="800" Width="1000">
+    <Grid Background="#00a550" >
+        <Border MinWidth="600" Margin="21,121,35,0" Background="#fff" VerticalAlignment="Top" Padding="30" MaxWidth="550" CornerRadius="20" Height="514">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color ="LightGray" ShadowDepth="0" />
+            </Border.Effect>
+
+        </Border>
+        <Button Content="Войти" Margin="601,515,299,219" Background="#FF3AB77E" Click="Button_Click" Foreground="#DD000000" Height="50" Width="100" FontSize="20" />
+        <TextBlock Text="Добро пожаловать на Chess.com!" FontSize="30" FontWeight="Bold" RenderTransformOrigin="0.509,-1.274" Margin="241,138,255,583" />
+        <TextBox x:Name="tb_log" materialDesign:HintAssist.Hint="Введите логин или ваш email" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  Text="Tellur1337" Margin="233,360,255,351" />
+        <PasswordBox x:Name="pass" materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Password="5472qwerty" Margin="233,438,255,281" />
+        <Button Content="Сохранить HTML" Click="Button_Click_1" Background="#18a3a1" Style="{StaticResource MaterialDesignFlatButton}" RenderTransformOrigin="0.597,1.527" Margin="241,523,574,211" Foreground="Black" Height="50" FontSize="18"/>
+        <Image x:Name="Lol" HorizontalAlignment="Left" Height="144" Margin="601,211,0,0" VerticalAlignment="Top" Width="144" Source="/шахматы.png"/>
+        <Image  x:Name="Lol1" HorizontalAlignment="Left" Height="179" Margin="334,206,0,0" VerticalAlignment="Top" Width="136" Source="/шах.png" RenderTransformOrigin="0.329,0.498"/>
+        <Image HorizontalAlignment="Left" Height="156" Margin="452,209,0,0" VerticalAlignment="Top" Width="127" Source="/шахм.png"/>
+        <Image HorizontalAlignment="Left" Height="127" Margin="220,211,0,0" VerticalAlignment="Top" Width="111" Source="/ша.png" RenderTransformOrigin="0.262,0.373">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="56.168"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+    </Grid>
+</Window>
